@@ -5,11 +5,11 @@ services:
 
 script:
 - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-- docker build -t glongzh/nginx-ingress-controller:0.23.0 ./nginx-ingress-controller/
-- docker push glongzh/nginx-ingress-controller:0.23.0
-- docker build -t glongzh/defaultbackend:1.4 ./defaultbackend/
-- docker push glongzh/defaultbackend:1.4
-- docker build -t glongzh/tiller:v2.13.1 ./tiller/
-- docker push glongzh/tiller:v2.13.1
-- docker build -t glongzh/nfs-provisioner:v2.2.2 ./nfs-provisioner/
-- docker push glongzh/nfs-provisioner:v2.2.2
+#- docker build -t glongzh/nginx-ingress-controller:0.23.0 ./nginx-ingress-controller/
+#- docker push glongzh/nginx-ingress-controller:0.23.0
+#- docker build -t glongzh/defaultbackend:1.4 ./defaultbackend/
+#- docker push glongzh/defaultbackend:1.4
+#- docker build -t glongzh/tiller:v2.13.1 ./tiller/
+#- docker push glongzh/tiller:v2.13.1
+- docker build -t glongzh/nfs-provisioner:v2.2.1-k8s1.12 ./nfs-provisioner/
+- docker push glongzh/nfs-provisioner:v2.2.1-k8s1.12
