@@ -11,3 +11,5 @@ script:
 - docker push glongzh/defaultbackend:1.4
 - docker build -t glongzh/tiller:v2.13.1 ./tiller/
 - docker push glongzh/tiller:v2.13.1
+- docker build -t glongzh/nfs-provisioner:v2.2.2 ./nfs-provisioner/
+- docker push glongzh/nfs-provisioner:v2.2.2
